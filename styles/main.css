@@ -447,6 +447,13 @@ footer{
         & .title-container{
             display: none;
         }
+
+        & .information-container{
+
+            & .card-container{
+                position: fixed;
+            }
+        }
     }
 
     #world{
@@ -462,6 +469,7 @@ footer{
             & .text{
                 width: 60%;
                 border-radius: 10px;
+                position: fixed;
             }
         }
     }
