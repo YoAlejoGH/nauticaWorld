@@ -1,0 +1,29 @@
+nav{
+    background-color: black;
+
+    & ul{
+        & li{
+            & a{
+                color: white;
+            }
+
+            & a:hover{
+                color: black;
+            }
+        }
+    }
+}
+
+#world{
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(32,32,78,1) 27%, rgba(0,212,255,0) 41%);
+}
+
+footer{
+    background-color: black;
+
+    & section{
+        & p{
+            color: white;
+        }
+    }
+}
