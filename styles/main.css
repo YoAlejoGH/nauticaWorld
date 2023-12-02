@@ -64,7 +64,7 @@ main{
 
 .main-index{
     padding-top: 4rem;
-    height: 100vh;
+    height: 120vh;
     background-color: var(--main-bgc);
 
     & .portada{
@@ -325,10 +325,6 @@ main{
     }
 }
 
-main{
-    height: 120vh;
-}
-
 footer{
     display: none;
     width: 100%;
@@ -346,6 +342,127 @@ footer{
 
         & p{
             font-weight: 600;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body{
+        width: 100vw;
+    }
+
+    nav{
+        height: auto;
+        position: relative;
+
+        & ul{
+            flex-direction: column;
+        }
+    }
+
+    .main-index{
+        height: 120vh;
+
+        & .portada{
+            & .logo{
+                & h1{
+                    font-size: 3rem;
+                }
+            }
+        }
+
+        & .parte1{
+            flex-direction: column-reverse;
+
+            & .imgen-justificacion{
+                width: 80%;
+            }
+
+            & .texto-justificacion{
+                width: 80%;
+                margin-top: 20px;
+            }
+        }
+    }
+
+    .main-challenge{
+        & .part1{
+            & .information{
+                flex-wrap: nowrap;
+                flex-direction: column;
+                align-items: center;
+
+                & .card{
+                    width: 80%;
+                }
+            }
+        }
+    }
+
+    .main-world{
+        background-color: #000000;
+        height: 121vh;
+
+        & .information-container{
+            & .card-container{
+                margin-top: 250px;
+                width: 80%;
+            }
+        }
+    }
+
+    .main-about{
+        height: 100vh;
+
+        .about-img{
+            display: none;
+        }
+    }
+
+    footer{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .main-index{
+        & .part1{
+            & .texto-justificacion{
+                & p{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    .main-challenge{
+        & .part2{
+            & .container-part2{
+                flex-direction: row;
+            }
+        }
+    }
+
+    .main-world{
+        & .title-container{
+            display: none;
+        }
+    }
+
+    #world{
+        height: 100vh;
+    }
+
+    .about-img{
+        width: 100%;
+    }
+
+    .main-about{
+        & .about-container{
+            & .text{
+                width: 60%;
+                border-radius: 10px;
+            }
         }
     }
 }
