@@ -572,6 +572,12 @@ footer{
 
         & ul{
             flex-direction: column;
+
+            & li{
+                & a{
+                    font-size: 20px;
+                }
+            }
         }
     }
 
@@ -670,11 +676,12 @@ footer{
         }
     }
 
-    .main-about{
-        height: 100vh;
-
-        .about-img{
-            display: none;
+    .analisis-main{
+        & .cards-container{
+            justify-content: center;
+            & .card{
+                width: 85%;
+            }
         }
     }
 
