@@ -468,6 +468,13 @@ main{
 .workTeam-main{
     padding-top: 50px;
 
+    & .title-contianer{
+        & h1{
+            width: 100%;
+            text-align: center;
+        }
+    }
+
     & .cards-container{
         display: flex;
         flex-wrap: wrap;
@@ -492,6 +499,13 @@ main{
     width: 100%;
     height: auto;
     padding-top: 4rem;
+
+    & .title-container{
+        & h1{
+            width: 100%;
+            text-align: center;
+        }
+    }
 
     & .cards-container{
         display: flex;
@@ -561,6 +575,10 @@ footer{
     }
 }
 
+#menu{
+    display: none;
+}
+
 @media screen and (max-width: 600px) {
     body{
         width: 100vw;
@@ -570,16 +588,33 @@ footer{
         height: auto;
         position: relative;
 
+        & #menu{
+            display: block;
+            width: 75px;
+            left: 17px;
+            position: fixed;
+            top: 17px;
+        }
+
         & ul{
             flex-direction: column;
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+            background-color: #b2b2b2;
+            top: 0.1px;
+            left: -100%;
 
             & li{
+
                 & a{
                     font-size: 20px;
                 }
             }
         }
     }
+
+    
 
     .main-index{
         height: auto;
@@ -677,6 +712,14 @@ footer{
     }
 
     .analisis-main{
+
+        & .title-container{
+            & h1{
+                margin-top: 4rem;
+                width: 100%;
+                text-align: center;
+            }
+        }
         & .cards-container{
             justify-content: center;
             & .card{
@@ -696,6 +739,12 @@ footer{
     .workTeam-main{
         height: auto;
 
+        & .title-contianer{
+            margin-top: 3rem;
+            width: 100%;
+            text-align: center;
+        }
+
         & .cards-container{
 
             & .cards{
@@ -709,6 +758,10 @@ footer{
 }
 
 @media screen and (min-width: 1200px){
+
+    #menu{
+        display: none;
+    }
 
     header{
         & nav{
@@ -774,6 +827,13 @@ footer{
     }
 
     .workTeam-main{
+        & .title-contianer{
+            & h1{
+                width: 100%;
+                text-align: center;
+            }
+        }
+
         & .cards-container{
             width: 80%;
             margin: auto;
@@ -785,6 +845,13 @@ footer{
     }
 
     .analisis-main{
+        & .title-container{
+            & h1{
+                width: 100%;
+                text-align: center;
+            }
+        }
+
         & .cards-container{
             & .card{
                 width: 30%;
