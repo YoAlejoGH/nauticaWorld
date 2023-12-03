@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Oswald&family=Pacifico&display=swap');
 
 :root{
     --main-bg-color-navbar: #f2f2f2;
@@ -37,13 +37,14 @@ nav{
 
         & li{
             list-style: none;
-            padding: 1rem;
+            padding: 0.5rem;
 
             & a{
                 text-decoration: none;
                 color: var(--black);
                 padding: 1.2rem;
                 font-weight: 500;
+                font-size: 11px;
             }
 
             & a:hover{
@@ -79,7 +80,7 @@ main{
             text-align: center;
 
             & h1{
-                font-family: 'Pacifico', cursive;
+                font-family: 'Oswald', sans-serif;
                 font-size: 4rem;
             }
         }
@@ -487,45 +488,55 @@ main{
     }
 }
 
-.main-about{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.analisis-main{
     width: 100%;
+    height: auto;
+    padding-top: 4rem;
 
-    & .about-container{
-        width: 100%;
+    & .cards-container{
+        display: flex;
+        flex-wrap: wrap;
 
-        & .about-img{
-            height: 100vh;
-            opacity: 0.7;
-        }
-        & .text{
-            padding: 2.5rem;
-            width: 100%;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            backdrop-filter: blur(20px);
+        & .card{
+            display: flex;
+            flex-direction: column;
+            width: 45%;
+            background-color: #fff;
+            border-radius: 10px;
+            margin: 15px;
+            padding: 20px;
 
-            & h1{
-                color: var(--black);
-                width: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                font-weight: 600;
-            }
-        
-            & p{
-                color: var(--black);
+            & h3{
                 text-align: center;
-                margin: 1.25rem 1.25rem 0 1.25rem;
-                font-weight: 400;
+                margin-bottom: 20px;
+
+            }
+
+            & ul{
+                margin: auto;
+                margin-bottom: 20px;
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+
+                & li{
+                    display: flex;
+                    list-style: none;
+                    justify-content: space-evenly;
+                }
+            }
+
+            & p{
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            & img{
+                border-radius: 20px;
+                box-shadow: var(--shadow);
             }
         }
+
     }
 }
 
@@ -691,6 +702,20 @@ footer{
 }
 
 @media screen and (min-width: 1200px){
+
+    header{
+        & nav{
+            & ul{
+                & li{
+                    padding: 0.8rem;
+                    & a{
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+
     .main-index{
         & .part1{
             & .texto-justificacion{
@@ -705,6 +730,8 @@ footer{
         & .part2{
             & .container-part2{
                 flex-direction: row;
+                width: 80%;
+                margin: auto;
             }
         }
     }
@@ -712,6 +739,22 @@ footer{
     .main-world{
         & .title-container{
             display: none;
+        }
+
+        & .part4{
+            height: 110vh;
+        }
+
+        & .entry-mode{
+            & .card-contianer{
+                & .cards-container{
+                    width: 80%;
+                    margin: auto;
+                    & .card{
+                        width: 30%;
+                    }
+                }
+            }
         }
     }
 
@@ -723,12 +766,21 @@ footer{
         width: 100%;
     }
 
-    .main-about{
-        & .about-container{
-            & .text{
-                width: 60%;
-                border-radius: 10px;
-                position: fixed;
+    .workTeam-main{
+        & .cards-container{
+            width: 80%;
+            margin: auto;
+
+            & .cards{
+                width: 30%;
+            }
+        }
+    }
+
+    .analisis-main{
+        & .cards-container{
+            & .card{
+                width: 30%;
             }
         }
     }
