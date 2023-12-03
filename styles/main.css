@@ -862,6 +862,17 @@ footer{
     .enviroment-main{
         padding-top: 4rem;
     }
+
+    .proceso-main{
+        padding-top: 8rem;
+        & .cards-container{
+            & .card{
+                margin: auto;
+                margin-bottom: 10px;
+                width: 80%;
+            }
+        }
+    }
 }
 
 @media screen and (min-width: 1200px){
@@ -975,6 +986,16 @@ footer{
             & .card{
                 width: 30%;
                 min-height: 100vh;
+            }
+        }
+    }
+
+    nav{
+        & ul{
+            & li{
+                & a{
+                    font-size: 10px;
+                }
             }
         }
     }
