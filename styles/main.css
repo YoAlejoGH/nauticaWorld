@@ -65,8 +65,9 @@ main{
 
 .main-index{
     padding-top: 4rem;
-    height: 120vh;
+    height: auto;
     background-color: var(--main-bgc);
+    padding-bottom: 4rem;
 
     & .portada{
         width: 100%;
@@ -91,6 +92,7 @@ main{
         display: flex;
         justify-content: space-around;
         align-items: center;
+        margin-top: 5rem;
 
         & .texto-justificacion{
             width: 45%;
@@ -682,6 +684,34 @@ footer{
 
 #menu{
     display: none;
+}
+
+#logoMain{
+    display: flex;
+    flex-direction: column;
+
+}
+
+#videoButton{
+    margin: auto;
+    margin-top:4rem ;
+    margin-bottom: 4rem;
+    font-style: none;
+    text-decoration: none;
+    background-color: #292929;
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    width: fit-content;
+}
+
+#logoImg{
+    width: 100%;
+    margin-top: 9rem;
+}
+
+#videoButton:hover{
+    background-color: #000;
 }
 
 @media screen and (max-width: 600px) {
